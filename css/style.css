@@ -1,0 +1,123 @@
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray: hsl(0, 0%, 95%);
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Transparentwhite);
+    Font size: 15px;
+}
+main{
+    margin: auto;
+    max-width: 22rem;
+    margin-top: 8rem;
+    border-radius: 4rem;
+}
+
+section{
+    padding: 2rem;
+    padding-right: 7rem;
+}
+
+.bloque1{
+    background-color: var(--Brightorange);
+    color: white;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.bloque2{
+    background-color: var(--Darkcyan);
+    color: white;
+}
+
+.bloque3{
+    background-color: var(--Verydarkcyan);
+    color: white;
+    border-radius: 0 0 1rem 1rem;
+}
+
+button{
+    background-color: var(--Verylightgray);
+    border: none;
+    border-radius: 4rem;
+    height: 2.5rem;
+    width: 8rem;
+    font-weight: 700;
+
+}
+
+.bloque1 button:hover{
+    cursor:pointer;
+    color: white;
+    background-color: var(--Brightorange);
+    border: 1px solid white;
+}
+.bloque2 button:hover{
+    cursor:pointer;
+    color: white;
+    background-color: var(--Darkcyan);
+    border: 1px solid white;
+}
+.bloque3 button:hover{
+    cursor:pointer;
+    color: white;
+    background-color: var(--Verydarkcyan);
+    border: 1px solid white;
+}
+
+.bloque1 button{
+    color: var(--Brightorange);
+}
+
+.bloque2 button{
+    color: var(--Darkcyan);
+}
+
+.bloque3 button{
+    color: var(--Verydarkcyan);
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+p{
+    color: var(--Transparentwhite);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media(min-width:768px){
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 60rem;
+
+    }
+
+    .bloque1{
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .bloque3{
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    section{
+        padding-right: 4rem;
+    }
+
+    button{
+        margin: 4rem 0 1rem 0;
+    }
+
+}
+    
