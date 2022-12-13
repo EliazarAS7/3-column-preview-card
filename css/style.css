@@ -12,7 +12,7 @@
 
 body{
     background-color: var(--Transparentwhite);
-    Font size: 15px;
+    Font-size: 15px;
 }
 main{
     margin: auto;
